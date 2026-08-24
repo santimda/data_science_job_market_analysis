@@ -12,14 +12,15 @@ This project explores the Data Science job market using a large dataset of job p
 
 The analysis is performed in Python using pandas, NumPy, Matplotlib, Seaborn, and Hugging Face Datasets.
 
+
 ## Key Findings
 
-- Python and SQL are by far the most frequently requested Data Science skills in both the US and European markets.
-- The US has a higher reported salary distribution than the selected European markets, although salary reporting is substantially more common in the US.
-- Skill requirements differ between the two markets, with some cloud technologies being relatively more prevalent in Europe and skills such as Tableau and Excel being more prevalent in US postings.
-- Within Europe, reported median salaries vary substantially between countries.
-- Some specialized cloud and data-engineering skills are associated with higher reported median salaries, while skills more commonly associated with Data Analyst roles tend to have lower reported median salaries.
-- These salary associations should not be interpreted causally because the analysis does not control for seniority, industry, company, location, or other confounding variables.
+- **Python and SQL** dominate Data Science job postings in both the US and European markets.
+- The US and European markets show noticeable differences in the prevalence of individual skills and job-posting characteristics.
+- Reported US salaries are higher than reported European salaries, although **salary information is very scarse in European postings**.
+- Within Europe, reported salaries vary substantially between countries.
+- Some **specialized cloud and data-engineering skills are associated with higher reported median salaries**, while more general-purpose skills tend to have lower salary associations.
+- Salary results should be interpreted as associations within the reported-salary subset, rather than causal effects.
 
 ## Dataset
 
@@ -114,17 +115,6 @@ Higher median salaries are associated with postings requesting specific librarie
 
 Important caveat: the plot shows only the median salary for each skill and does not display the distribution of individual salaries underlying those medians (e.g. the 25th–75th percentile range). These distributions can be very broad, so apparent differences between skill-associated median salaries should be interpreted cautiously.
 
-## Conclusions
-
-The analysis suggests several broad patterns in the Data Science job market:
-
-- **Python and SQL are fundamental skills** across both the US and European markets.
-- **Cloud, data engineering, visualization, and machine-learning technologies** are also frequently requested, with some of these skills being associated with higher reported median salaries.
-- The relative demand for individual skills differs between the two markets.
-- **Reported US salaries are substantially higher** than reported European salaries, although salary reporting is incomplete (especially in the European market) and the markets are heterogeneous.
-- Within Europe, **salary levels vary considerably by country**.
-- Some skills associated with higher median salaries are less frequently requested, suggesting a **potential trade-off between skill prevalence and salary association**.
-- Salary differences should not be interpreted causally: the analysis does not control for seniority, industry, company, location, or other confounding variables.
 
 ## Tools
 
